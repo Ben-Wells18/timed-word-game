@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Typing game</title>
+	<link rel="stylesheet" type="text/css" href="typinggame.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>SpeedTyper</h1>
+	</header>
+<main>
+<!-- Word and Text input -->
+	<p class="lead">Type the given word within 
+		<span class="text-success" id="seconds">5</span> seconds:</p>
+	<h2 class="display-2 mb-5" id="current-word">hello</h2>
+	<input type="text" placeholder="Start typing..." id="word-input" autofocus>
+	<h4 id="message"></h4>
+<!-- Time & Score Columns -->
+	<h3> Time left: 
+		<span id="time">0</span>
+	</h3>
+	<h3> Score:
+		<span id="score">0</span>
+	</h3>
+<!-- Instructions -->
+	<h5>Instructions</h5>
+</main>
+<footer>
+	<p id="instruction-text">Type each word in the given amount of seconds to score.
+	To play again, just type the current word. Your score will then reset.</p>
+
+	<button class="btn-style" id="easyBtn">Easy</button>
+	<button class="btn-style" id="medBtn">Medium</button>
+	<button class="btn-style" id="hardBtn">Hard </button>
+</footer>
+
+<script type="text/javascript" src="typingGame.js"></script>	
+</body>
+</html>
